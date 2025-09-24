@@ -5,12 +5,12 @@ metadata:
   namespace: openshift-gitops
 spec:
   destination:
-    namespace: bubble-animation
+    namespace: default
     server: https://kubernetes.default.svc 
-  project: default 
+  project:  default
   source: 
     path: bubble-animation/application-mainfest
-    repoURL: https://github.com/ksingh7/argocd-openshift
+    repoURL: https://github.com/mjankula/argocd-openshift2
     targetRevision: main
   syncPolicy: 
     automated:
